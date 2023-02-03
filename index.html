@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Password Generator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="animation.scss">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+        <script src="https://kit.fontawesome.com/f6243a547f.js" crossorigin="anonymous"></script>
+        <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    </head>
+    <body>
+        <div class="main-content">
+            <span><h1>Password Generator</h1></span>
+            
+        <div class='container'>
+            <h2>Generate your password below:</h2>
+                <div class="password-container">
+                    <!-- <p class="password-result">Your secure password</p>  -->
+                    <input type="password" value="" id="password-result"/>
+
+                    <span class="reveal-icon" >
+                        <i class="fa-solid fa-eye" id='icon' aria-hidden=""></i>
+                    </span>
+<!-- programmatically change the class name to hidden so icon stays in same position-->
+                </div>
+
+            <form class="form">
+                <input type="checkbox" id="checkbox1" class="checkboxes-text">
+                <label class="checkboxes-text">at Least 1 uppercase letter</label>
+                <br/>
+                <input type="checkbox" id="checkbox2" class="checkboxes-text">
+                <label class="checkboxes-text">at least 1 lowercase letters</label>
+                <br/>
+                <input type="checkbox" id="checkbox3" class="checkboxes-text">
+                <label class="checkboxes-text">at least 1 special character</label>
+                <br/>
+
+                    <input type="range" value="8" min="8" max="14" id="range" class="checkboxes-text last-requirement">
+                    <div>
+                        <label class="checkboxes-text last-requirement"> <output id="output">8</output></label>
+                    </div>
+                    
+                </div>
+                
+                <br/>
+
+                <button class="btn">Generate Password</button>
+            </form>
+            </div> <!-- container -->
+        </div> <!-- main-content -->
+        
+      <py-script src="./main.py"></py-script>
+      <script src="./script.js"></script>
+    </body>
+</html>

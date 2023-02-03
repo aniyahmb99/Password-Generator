@@ -1,0 +1,157 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --white: #fff;
+    --dark-trueblue: #0a0a5c;
+    --light-blue: #5eb6e9;
+    --denim-blue: #4b459c;
+    --sky-blue: #6666e6;
+    --dark-denim-blue: #3b3b72;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+
+ body {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top,#b199f5, #5b49fb, #4b459c, #b199f5);
+}
+
+h1 {
+   
+    position: relative;
+    text-align: center;
+    color: var(--white);
+    font-family: 'Roboto Condensed';
+    font-size: 4.5rem;
+    text-shadow: 3px 3px var(--dark-trueblue);
+}
+
+h2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    color:  var(--dark-trueblue);
+    margin-bottom: 5%;
+}
+output {
+    position: relative;
+   
+}
+.main-content {
+    position: relative;
+    width: 70%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px 10px 10px 10px;
+    border: 0.3px solid rgba(241, 239, 239, 0.362);
+    margin-top: 5%;
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+    height: auto;
+ 
+    border-radius: 5px;
+    }
+
+i, input:hover {
+    cursor: pointer;
+}  
+
+.password-result {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 1.2rem;
+    /* margin-top: 2%; */
+    padding: 3% 1% 5% 5%;
+}
+ 
+.btn {
+    display: block;
+    position: relative;
+    width: max-content;
+    height: fit-content;
+    margin: 0 auto;
+    color:  var(--white);
+    background-color: #3b0f7d;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: #3b3b72;
+    font-size: 1.5rem
+}
+
+
+.form {
+    position: relative;
+    padding-top: 1%;
+
+}
+
+.checkboxes-text {
+    position: relative;
+}
+
+.last-requirement {
+    position: relative;
+    right: 1.6%
+}
+
+.fa-solid, .fa-eye {
+    position: relative;
+    top: 5%;
+    left: 30%;
+    padding-left: 10%;
+    
+}
+
+.range-container {
+    display: inline;
+}
+
+  
+  
+  
+
+
+/* When the browser is at least 600px and above */
+@media screen and (min-width: 577px) {
+}
+     
+    
+
+
+
+
