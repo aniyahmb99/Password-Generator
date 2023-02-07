@@ -14,7 +14,7 @@ let value = rangeSlider.valueAsNumber
 rangeSlider.addEventListener('wheel', (e) => {
     if (e.deltaY >= 8) {
         value += 1;
-        output.innerHTML = value += 1
+        output.textContent = value += 1
         
     } 
     if (e.deltaY <= 14) {
